@@ -1,10 +1,10 @@
 <?php
 include('../Config/database.php');
 
-if (empty($_POST['username'] || $_POST['password'])) {
+/* if (empty($_POST['username'] || $_POST['password'])) {
     header('Location: ../index.php');
     exit();
-}
+} */
 
 $usr = mysqli_real_escape_string($connection, $_POST['username']);
 $passwd = mysqli_real_escape_string($connection, $_POST['password']);

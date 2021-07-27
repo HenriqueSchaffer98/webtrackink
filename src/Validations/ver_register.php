@@ -1,9 +1,6 @@
 <?php
 include('../Config/database.php');
 
-if (empty($_POST['name'] || $_POST['username'] || $_POST['password'])) {
-    header('Location: ../pages/user_register.php');
-}
 
 $name = mysqli_real_escape_string($connection, $_POST['name']);
 $usr = mysqli_real_escape_string($connection, $_POST['username']);
