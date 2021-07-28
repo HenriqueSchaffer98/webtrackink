@@ -1,0 +1,10 @@
+CREATE TABLE hist_link (
+	id int not null AUTO_INCREMENT,
+    cod_http varchar(100),
+    rest text,
+    user_id int,
+    link_id int,
+    PRIMARY KEY (id),
+    FOREIGN KEY (user_id) REFERENCES usuarios(id),
+    FOREIGN KEY (link_id) REFERENCES link(id)
+);

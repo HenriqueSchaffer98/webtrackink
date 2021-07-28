@@ -17,7 +17,7 @@
                 <div class="mb-3">
                     <img src="../assets/img/webtrackink.png" class="rounded mx-auto d-block" alt="logo" width="200px" height="200px" />
                 </div>
-                <form action="" method="POST">
+                <form action="../Validations/ver_register.php" method="POST">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Nome</label>
                         <input class="form-control" type="text" placeholder="Nome" id="iptUser" name="name" aria-label="default input example" />
@@ -30,7 +30,7 @@
                         <label for="exampleInputPassword1" class="form-label">Password</label>
                         <input type="password" class="form-control" name="password" id="iptPassword" />
                     </div>
-                    <button type="" onclick="validaCadastro()" class="btn btn-primary">Cadastrar</button>
+                    <button type="submit" onclick="validaCadastro()" class="btn btn-primary">Cadastrar</button>
                 </form>
             </div>
         </div>

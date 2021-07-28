@@ -38,10 +38,3 @@
 </body>
 
 </html>
-<!-- <form action="./Validations/ver_login.php" method="POST">
-                    <label>Username: </label>
-                    <input type="text" name="username" />
-                    <label>Password: </label>
-                    <input type="password" name="password">
-                    <button type="submit">Login</button>
-                </form> -->
