@@ -19,7 +19,7 @@ if ($logged > 0) {
     exit();
 } else {
     $checked = "false";
-    header("Location: ../index.php");
+    header("Location: ../index.php?msg=failed");
     exit();
 }
 ?>

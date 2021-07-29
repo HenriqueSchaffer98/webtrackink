@@ -1,4 +1,13 @@
+<?php
 
+if (isset($_GET['msg'])) {
+    $failedmsg = true;
+} else {
+    $failedmsg = false;
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,6 +39,9 @@
                 <div class="mb-3">
                     <img src="./assets/img/webtrackink.png" class="rounded mx-auto d-block" alt="logo" width="250px" height="250px" />
                 </div>
+                <?php
+                if ($failedmsg == true) {
+                ?>
                     <div class="alert alert-danger d-flex align-items-center" role="alert">
                         <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
                             <use xlink:href="#exclamation-triangle-fill" />
@@ -38,6 +50,12 @@
                             Usuário e senha incorretos!
                         </div>
                     </div>
+                <?php
+                } else {
+
+                    //$failedmsg = false;
+                }
+                ?>
                 <form action="./Validations/ver_login.php" method="POST">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Username</label>
