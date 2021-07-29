@@ -44,24 +44,30 @@ $row = mysqli_num_rows($result);
 
                     ?>
                         <tbody>
-                            <tr>
-                                <th scope="row"><?php $id_link = $dataLink['id'];
-                                                echo $id_link;
-                                                ?></td>
-                                <td><?php echo $dataLink['url']; ?></td>
-                                <td><?php
-                                    if ($dataLink['status'] == 1) {
-                                        echo "Ativo";
-                                    } else {
-                                        echo "Inativo";
-                                    }
-                                    ?></td>
-                                <td><?php echo $_SESSION['username']; ?></td>
-                                <td>
-                                    <a href="#"><img src="../assets/img/entrar.png" alt="Entrar" width="20px" height="20px" /></a>
-                                    <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"><img src="../assets/img/editar.png" alt="Editar" width="20px" height="20px" /></a>
-                                    <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"><img src="../assets/img/excluir.png" alt="Excluir" width="20px" height="20px" /></a>
-                                </td>
+                            <?php
+                            if ($dataLink['status'] == 0) {
+                                echo "<tr class='table-danger'>";
+                            } else {
+                                echo "<tr>";
+                            }
+                            ?>
+                            <th scope="row"><?php $id_link = $dataLink['id'];
+                                            echo $id_link;
+                                            ?></td>
+                            <td><?php echo $dataLink['url']; ?></td>
+                            <td><?php
+                                if ($dataLink['status'] == 1) {
+                                    echo "Ativo";
+                                } else {
+                                    echo "Inativo";
+                                }
+                                ?></td>
+                            <td><?php echo $_SESSION['username']; ?></td>
+                            <td>
+                                <a href="#"><img src="../assets/img/entrar.png" alt="Entrar" width="20px" height="20px" /></a>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"><img src="../assets/img/editar.png" alt="Editar" width="20px" height="20px" /></a>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"><img src="../assets/img/excluir.png" alt="Excluir" width="20px" height="20px" /></a>
+                            </td>
 
                             </tr>
                         </tbody>
@@ -79,7 +85,7 @@ $row = mysqli_num_rows($result);
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="../Validations/update_link.php?id=<?php echo $id_link;?>" method="POST">
+                    <form action="../Validations/update_link.php?id=<?php echo $id_link; ?>" method="POST">
                         <div class="mb-3 row">
                             <label class="col-sm-2 col-form-label">ID:</label>
                             <div class="col-sm-3">

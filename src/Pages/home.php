@@ -18,10 +18,10 @@ require_once('../Validations/session.php');
     <header>
         <nav class="navbar navbar-light" style="background-color: #2c82a7;">
             <div class="">
-                <img src="../assets/img/smallLogo.png" alt="smLogo" width="40px" height="40px">
+                <a href="./home.php"><img src="../assets/img/smallLogo.png" alt="smLogo" width="40px" height="40px"></a>
             </div>
             <a class="navbar-brand">WEBTrackink</a>
-            <button class="btn btn-secondary"><a href="../Validations/destroy_session.php">Logout</a></button>
+            <a href="../Validations/destroy_session.php"><img src="../assets/img/logout.png" alt="Logout" width="30px" height="30px"></a>
         </nav>
     </header>
     <article>

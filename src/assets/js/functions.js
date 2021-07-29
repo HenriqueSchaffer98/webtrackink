@@ -1,4 +1,18 @@
-function validaLogin(){
+function refresh(){
+    $.ajax({
+        url: "../../Validations/list_link.php",
+        success: function(result){
+            $(".result").html(result);
+        },
+        error: function(){
+            $(".result").html("Error");
+        }
+    });
+}
+
+
+
+/* function validaLogin(){
     let usr = document.getElementById('iptUsername');
     let passwd = document.getElementById('iptPassword');
 
@@ -17,4 +31,4 @@ function validaCadastro(){
         alert('Favor Preencher os campos!');
     }
 
-}
+} */
