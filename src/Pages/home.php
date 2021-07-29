@@ -11,10 +11,68 @@ require_once('../Validations/session.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <script src="../assets/js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#btn-ajax-jquery").click(function() {
+                $.ajax({
+                    type: 'POST',
+                    url: "../Validations/list_links.php",
+                    dataType: "html",
+                    beforeSend: function() {
+                        $("#resposta").html("Aguarde...");
+                    },
+                    success: function(data) {
+                        $("#resposta").html(data);
+                    },
+                    error: function(err) {
+                        console.log("Error: " + err.status);
+                        console.log("Error Message: " + err.statusText);
+                    }
+                });
+            });
+        });
+
+
+        function ajaxExecute() {
+            var result = document.getElementById("resposta");
+            var ajax;
+
+            // Instancia o AJAX
+            if (navigator.appName == "Microsoft Internet Explorer") {
+                ajax = new ActiveXObject("Microsoft.XMLHTTP");
+            } else {
+                ajax = new XMLHttpRequest();
+            }
+
+            // Faz requisição
+            ajax.open("GET", "../Validations/list_links.php", true);
+
+            ajax.onreadystatechange = function() {
+                if (ajax.readyState == 1) {
+                    result.innerHTML = "Aguarde...";
+                }
+                if (ajax.readyState == 4) {
+                    // Status OK            
+                    if (ajax.status == 200) {
+                        // Exibe o resultado
+                        result.innerHTML = ajax.responseText;
+                    } else {
+                        // Em caso de erro mostra a mensagem
+                        result.innerHTML = ajax.statusText;
+                    }
+                }
+            }
+            ajax.send(null);
+        }
+
+        setInterval(ajaxExecute, 2000);
+    </script>
     <title>Dashboard</title>
 </head>
 
-<body>
+<body onload="ajaxExecute()">
     <header>
         <nav class="navbar navbar-light" style="background-color: #2c82a7;">
             <div class="">
@@ -51,9 +109,11 @@ require_once('../Validations/session.php');
                 </div>
             </div>
         </div>
+        <div id="resposta"></div>
 
     </article>
-    <?php require_once('../Validations/list_links.php'); ?>
+    <?php //require_once('../Validations/list_links.php'); 
+    ?>
 </body>
 
 </html>
