@@ -15,6 +15,10 @@ require_once('../Templates/header.php');
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript">
+        function teste(){
+            alert('Deu certo!')
+        }
+
         $(function() {
             $("#btn-ajax-jquery").click(function() {
                 $.ajax({
@@ -68,7 +72,7 @@ require_once('../Templates/header.php');
             ajax.send(null);
         }
 
-        setInterval(ajaxExecute, 300000);
+        setInterval(ajaxExecute, 10000);
     </script>
     <title>Dashboard</title>
 </head>
@@ -102,6 +106,7 @@ require_once('../Templates/header.php');
                 </div>
             </div>
         </div>
+        <button onclick="teste()">Teste</button>
         <div id="resposta"></div>
 
     </article>
