@@ -2,8 +2,9 @@
 
 include('../Config/database.php');
 
+
 $usr = mysqli_real_escape_string($connection, $_POST['username']);
-$passwd = mysqli_real_escape_string($connection, $_POST['password']);
+$passwd = mysqli_real_escape_string($connection, md5($_POST['password']));
 
 $query = "select * from usuarios where username = '{$usr}' and password = '{$passwd}' ";
 $result = mysqli_query($connection, $query);
@@ -14,10 +15,11 @@ if ($logged > 0) {
     session_start();
     $_SESSION["id_user"] = $dataUser['id'];
     $_SESSION["username"] = $usr;
-    //$_SESSION['password'] = $passwd;
     header('Location: ../Pages/home.php');
     exit();
 } else {
-    header('Location: ../index.php');
+    $checked = "false";
+    header("Location: ../index.php?msg=failed");
     exit();
 }
+?>

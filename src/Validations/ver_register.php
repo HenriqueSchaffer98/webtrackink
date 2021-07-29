@@ -4,20 +4,11 @@ include('../Config/database.php');
 
 $name = mysqli_real_escape_string($connection, $_POST['name']);
 $usr = mysqli_real_escape_string($connection, $_POST['username']);
-$passwd = mysqli_real_escape_string($connection, $_POST['password']);
+$passwd = mysqli_real_escape_string($connection, md5($_POST['password']));
 
-$query = "insert into usuarios (nome, username, password) values ('{$name}', '{$usr}', '{$passwd}')";
+$sql = "insert into usuarios (nome, username, password) values ('$name', '$usr', '$passwd')";
+$result = mysqli_query($connection, $sql);
 
-if (mysqli_query($connection, $query)) {
-    session_start();
-    $_SESSION['usr_logado'] = $usr;
-    header('Location: ../Pages/home.php');
-    exit();
-} else {
-    die("Error" . $connection->connect_error);
-    header('Location: ../index.php');
-    exit();
-}
-mysqli_close($connection);
-
+header('Location: ../index.php');
+//mysqli_close($connection);
 ?>
