@@ -124,7 +124,7 @@ $row = mysqli_num_rows($result);
                 <div class="modal-header">
                     <h5 class="modal-title" id="staticBackdropLabel">Excluir Usuário</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+                </div>e
                 <div class="modal-body">
                     Você tem certeza que deseja excluir este registro?
                 </div>

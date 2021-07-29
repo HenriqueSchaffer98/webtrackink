@@ -47,7 +47,7 @@
                         <label for="exampleInputPassword1" class="form-label">Password</label>
                         <input type="password" class="form-control" name="password" id="iptPassword" required />
                     </div>
-                    <button type="submit" onclick="" class="btn btn-primary">Login</button>
+                    <button type="submit" onclick="" class="btn btn-primary" style="background-color: #2c82a7;">Login</button>
                     <a href="./Pages/user_register.php"><button type="button" onclick="" class="btn btn-success">Cadastre-se</button></a>
                 </form>
             </div>
