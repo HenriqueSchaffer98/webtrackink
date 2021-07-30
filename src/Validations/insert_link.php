@@ -16,7 +16,7 @@ if($status == "true"){
 $query = "insert into link (url, status, user_id) values ('{$url}', '{$status}', '{$idUser}')";
 
 if (mysqli_query($connection, $query)) {
-    header('Location: ../Pages/home.php');
+    header('Location: ../Pages/home.php?msg=sucess');
     exit();
 } else {
     die("Error" . $connection->connect_error);
