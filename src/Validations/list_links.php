@@ -32,7 +32,9 @@ $row = mysqli_num_rows($result);
 <body>
     <div class="container">
         <div class="row row justify-content-md-center">
+            
             <div class="col-sm-10">
+            <h3>Links Cadastrados</h3>
                 <table class="table table-hover">
                     <thead>
                         <tr>
