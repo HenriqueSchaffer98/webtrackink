@@ -1,10 +1,20 @@
-import Sequelize from 'sequelize';
+ var request = require('request');
+request('http://pt.stackoverflow.com', function (error, response, body) {
+  if (!error && response.statusCode == 200) {
+    let response = body;
+
+    console.log(response);
+  }
+});
+
+// https://nodejs.org/api/http.html
+/* import Sequelize from 'sequelize';
 
 const sequelize = new Sequelize('webtrackink', 'root', '', {
     host: "localhost",
     dialect: 'mysql'
 });
-
+ */
 
 
 /* const Sequelize = require('sequelize'); // -- Importando sequelize
@@ -17,8 +27,13 @@ const sequelize = new Sequelize('webtrackink', 'root', '', {
 
  */
 
-
-
+// Busca requisição http
+/* var request = require('request');
+request('http://pt.stackoverflow.com', function (error, response, body) {
+  if (!error && response.statusCode == 200) {
+    console.log(response.statusCode) // Mostra o HTML da página inicial do StackOverflow.
+  }
+});
 
 
 
