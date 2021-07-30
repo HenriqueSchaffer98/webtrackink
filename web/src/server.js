@@ -1,5 +1,5 @@
  var request = require('request');
-request('http://pt.stackoverflow.com', function (error, response, body) {
+request('https://ge.globo.com/sp/', function (error, response, body) {
   if (!error && response.statusCode == 200) {
     let response = body;
 
@@ -15,7 +15,11 @@ const sequelize = new Sequelize('webtrackink', 'root', '', {
     dialect: 'mysql'
 });
  */
+/*
+https://www.mundojs.com.br/2020/05/25/criando-um-web-scraper-com-nodejs/
+https://desenvolvimentoparaweb.com/php/como-pegar-parte-do-conteudo-dados-de-outro-site-com-php/
 
+*/
 
 /* const Sequelize = require('sequelize'); // -- Importando sequelize
 // -- Instanciando conexão com o banco de dados -- //
