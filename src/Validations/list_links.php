@@ -32,7 +32,9 @@ $row = mysqli_num_rows($result);
 <body>
     <div class="container">
         <div class="row row justify-content-md-center">
+            
             <div class="col-sm-10">
+            <h3>Links Cadastrados</h3>
                 <table class="table table-hover">
                     <thead>
                         <tr>
@@ -68,7 +70,7 @@ $row = mysqli_num_rows($result);
                                 ?></td>
                             <td><?php echo $_SESSION['username']; ?></td>
                             <td>
-                                <a href="#"><img src="../assets/img/entrar.png" alt="Entrar" width="20px" height="20px" /></a>
+                                <a href="../Pages/view_link.php?id=<?= $dataLink['id'] ?>"><img src="../assets/img/entrar.png" alt="Entrar" width="20px" height="20px" /></a>
                                 <a href="../Pages/update_link.php?id=<?= $dataLink['id'] ?>"><img src="../assets/img/editar.png" alt="Editar" width="20px" height="20px" /></a>
                                 <a href="../Validations/delete_link.php?id=<?= $dataLink['id'] ?>" data-confirm="Tem certeza que deseja excluir o registro?"><img src="../assets/img/excluir.png" alt="Editar" width="20px" height="20px" /></a>
 
