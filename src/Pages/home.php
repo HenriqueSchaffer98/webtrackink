@@ -9,8 +9,8 @@ if (isset($_GET['msg'])) {
     $confirmLink = false;
 }
 if (isset($_GET['id'])) {
-    $delLink = true;
     $id_del = $_GET['id'];
+    $_SESSION['id_del'] = $id_del;
 } else {
     $delLink = false;
 }
@@ -86,15 +86,6 @@ if (isset($_GET['id'])) {
         }
 
         setInterval(ajaxExecute, 300000);
-
-        function abreModal() {
-            alert('teste');
-            /* $("#myModal").modal({
-                show: true
-            }); */
-        }
-
-        setTimeout(abreModal, 2000);
     </script>
     <title>Dashboard</title>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -136,7 +127,6 @@ if (isset($_GET['id'])) {
                             </div>
                         </div>
                     </form>
-                    <button onclick="abreModal()">Teste</button>
                 </div>
             </div>
         </div>
@@ -165,42 +155,7 @@ if (isset($_GET['id'])) {
             $confirmLink = false;
         }
         ?>
-
         <div id="resposta"></div>
-
-        <?php
-        if ($delLink == true) {
-        ?>
-            <script type="text/javascript">
-                abreModal();
-            </script>
-        <?php
-        } else {
-            $delLink = false;
-        }
-        ?>
-        <!-- ================ MODAL =================== -->
-
-        <div id="myModal" class="modal" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Modal body text goes here.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </article>
 
 </body>

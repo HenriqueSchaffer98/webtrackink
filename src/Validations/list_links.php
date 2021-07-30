@@ -24,7 +24,9 @@ $row = mysqli_num_rows($result);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/bootstrap.css" />
-    <script src="../assets/js/functions.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -67,8 +69,9 @@ $row = mysqli_num_rows($result);
                             <td><?php echo $_SESSION['username']; ?></td>
                             <td>
                                 <a href="#"><img src="../assets/img/entrar.png" alt="Entrar" width="20px" height="20px" /></a>
-                                <a href="../Pages/update_link.php?id=<?php echo $dataLink['id']; ?>"><img src="../assets/img/editar.png" alt="Editar" width="20px" height="20px" /></a>
-                                <a href="../Pages/home.php?id=<?php echo $dataLink['id']; ?>"><img src="../assets/img/excluir.png" alt="Excluir" width="20px" height="20px" /></a>
+                                <a href="../Pages/update_link.php?id=<?= $dataLink['id'] ?>"><img src="../assets/img/editar.png" alt="Editar" width="20px" height="20px" /></a>
+                                <a href="../Validations/delete_link.php?id=<?= $dataLink['id'] ?>" data-confirm="Tem certeza que deseja excluir o registro?"><img src="../assets/img/excluir.png" alt="Editar" width="20px" height="20px" /></a>
+
                             </td>
 
                             </tr>
@@ -79,6 +82,7 @@ $row = mysqli_num_rows($result);
             </div>
         </div>
     </div>
+
 
 </body>
 
