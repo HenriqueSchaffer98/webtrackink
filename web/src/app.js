@@ -13,7 +13,7 @@
             const link_id = await buscaHist.map((hist) => {
                 return hist.link_id;
             });
-             await links.map((item) => {
+            await links.map((item) => {
                 console.log("Mapeando links..." + item.id + ": " + item.url);
 
                 async function verLinks() {
@@ -45,7 +45,15 @@
                                         link_id: item.id
                                     }
                                 });
-/*                                 if(request.statusCode === "404"){
+                                if (request.statusCode === 200) {
+                                    Link.update({
+                                        status: 1
+                                    }, {
+                                        where: {
+                                            id: item.id
+                                        }
+                                    });
+                                } else {
                                     Link.update({
                                         status: 0
                                     }, {
@@ -53,24 +61,24 @@
                                             id: item.id
                                         }
                                     });
-                                } */
-    
+                                }
+
                             }
-                           
+
                         }
-                        
+
                         verHistLink();
 
                     });
                 }
                 verLinks();
 
-            }); 
+            });
 
         } catch (error) {
             console.log("Erro ao buscar dados do banco: " + error)
         }
 
     }
-    setInterval(accessLinks, 180000);
+    setInterval(accessLinks, 10000);
 })();

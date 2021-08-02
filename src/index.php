@@ -1,5 +1,5 @@
 <?php
-
+// -- Verifica retorno de erro -- //
 if (isset($_GET['msg'])) {
     $failedmsg = true;
 } else {
@@ -45,6 +45,7 @@ if (isset($_GET['msg'])) {
                     <img src="./assets/img/webtrackink.png" class="rounded mx-auto d-block" alt="logo" width="250px" height="250px" />
                 </div>
                 <?php
+                // -- verifica status do retorno e monta alerta -- //
                 if ($failedmsg == true) {
                 ?>
                     <div class="container">
@@ -62,11 +63,12 @@ if (isset($_GET['msg'])) {
                         </div>
                     </div>
                     <script type="text/javascript">
+                        // -- Reset URL
                         setInterval(reload, 3000);
                     </script>
                 <?php
                 } else {
-
+                    // -- Seta msg como false -- //
                     $failedmsg = false;
                 }
                 ?>

@@ -1,20 +1,14 @@
 <?php
-
+// -- Realiza importações -- //
 require_once('../Config/database.php');
 require_once('session.php');
-
+// -- Pega informações da Session -- //
 $idUser = $_SESSION['id_user'];
 $usuário = $_SESSION['username'];
-
-
-
+// -- Cria a Query e Executa -- //
 $query = "select * from link where user_id={$idUser}";
-
 $result = mysqli_query($connection, $query);
 $row = mysqli_num_rows($result);
-//$dataLink = mysqli_fetch_assoc($result);
-
-
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -46,11 +40,13 @@ $row = mysqli_num_rows($result);
                         </tr>
                     </thead>
                     <?php
+                    // -- Laço de repetição para apresentar os dados da tabela Link -- //
                     while ($dataLink = mysqli_fetch_array($result)) {
 
                     ?>
                         <tbody>
                             <?php
+                            // -- Verifica status do link -- //
                             if ($dataLink['status'] == 0) {
                                 echo "<tr class='table-danger'>";
                             } else {
@@ -70,6 +66,7 @@ $row = mysqli_num_rows($result);
                                 ?></td>
                             <td><?php echo $_SESSION['username']; ?></td>
                             <td>
+                                <!-- Ações -->
                                 <a href="../Pages/view_link.php?id=<?= $dataLink['id'] ?>"><img src="../assets/img/entrar.png" alt="Entrar" width="20px" height="20px" /></a>
                                 <a href="../Pages/update_link.php?id=<?= $dataLink['id'] ?>"><img src="../assets/img/editar.png" alt="Editar" width="20px" height="20px" /></a>
                                 <a href="../Validations/delete_link.php?id=<?= $dataLink['id'] ?>" data-confirm="Tem certeza que deseja excluir o registro?"><img src="../assets/img/excluir.png" alt="Editar" width="20px" height="20px" /></a>

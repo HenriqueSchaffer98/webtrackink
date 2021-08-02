@@ -1,11 +1,13 @@
 <?php 
+// -- Visualização do Body -- //
+
+// -- Realiza importações -- //
 require_once('../Config/database.php');
 require_once('../Validations/session.php');
 require_once('../Templates/header.php');
 
 $idRequest = mysqli_real_escape_string($connection, $_GET['idRequest']);
-
-/* "SELECT * from link INNER JOIN hist_link on link.id = hist_link.link_id where hist_link.link_id = 24; " */
+// -- Cria Query -- //
 $sql = "select * from hist_link where id = {$idRequest}";
 $result = mysqli_query($connection, $sql);
 $dataRequest = mysqli_fetch_array($result);

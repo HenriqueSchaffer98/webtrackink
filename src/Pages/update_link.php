@@ -1,15 +1,17 @@
 <?php
+// -- Formulário de atualização -- //
+
+
+// -- Realiza importações -- //
 require_once('../Config/database.php');
 require_once('../Validations/session.php');
 require_once('../Templates/header.php');
-
-
+// -- Pega informações do GET -- //
 $idLink = mysqli_real_escape_string($connection, $_GET['id']);
-
+// -- Cria Query -- //
 $sql = "select * from link where id={$idLink}";
 $result = mysqli_query($connection, $sql);
 $dataLink = mysqli_fetch_array($result);
-
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">

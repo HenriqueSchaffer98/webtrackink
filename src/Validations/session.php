@@ -1,4 +1,5 @@
 <?php
+// -- Verifica Sessão -- //
 session_start();
 
 if (!isset($_SESSION["id_user"]) || !isset($_SESSION["username"])) {

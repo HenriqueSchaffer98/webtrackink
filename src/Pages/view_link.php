@@ -1,10 +1,13 @@
 <?php
+// -- Visualização dos links -- //
+
+// -- Realiza importações -- //
 require_once('../Config/database.php');
 require_once('../Validations/session.php');
 require_once('../Templates/header.php');
-
+// -- Pega GET -- /
 $idLink = mysqli_real_escape_string($connection, $_GET['id']);
-
+// -- Cria Query -- //
 $sql = "select * from link inner join hist_link on link.id = hist_link.link_id where hist_link.link_id = {$idLink}";
 $result = mysqli_query($connection, $sql);
 $dataLink = mysqli_fetch_array($result);

@@ -1,3 +1,4 @@
+<!-- Criação do formulário de cadastro -->
 <!DOCTYPE html>
 <html lang="en">
 

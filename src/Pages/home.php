@@ -1,8 +1,8 @@
 <?php
+// -- Realiza importações -- //
 require_once('../Validations/session.php');
-//require_once('../Validations/list_links.php');
 require_once('../Templates/header.php');
-
+// -- Verifica retorno GET -- //
 if (isset($_GET['msg'])) {
     $confirmLink = true;
 } else {
@@ -28,10 +28,11 @@ if (isset($_GET['id'])) {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript">
+        // -- Function para recarregamento da página -- //
         function reload() {
             window.location = 'home.php';
         }
-
+        // -- Function Reload Tabela Links -- // 
         $(function() {
             $("#btn-ajax-jquery").click(function() {
                 $.ajax({
@@ -52,7 +53,7 @@ if (isset($_GET['id'])) {
             });
         });
 
-
+        // -- Executa function Ajax -- //
         function ajaxExecute() {
             var result = document.getElementById("resposta");
             var ajax;
@@ -84,8 +85,8 @@ if (isset($_GET['id'])) {
             }
             ajax.send(null);
         }
-
-        setInterval(ajaxExecute, 300000);
+        // - Intervalo de repetição -- /
+        setInterval(ajaxExecute, 5000);
     </script>
     <title>Dashboard</title>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -131,6 +132,7 @@ if (isset($_GET['id'])) {
             </div>
         </div>
         <?php
+        // -- Mensagem de link cadastrado -- //
         if ($confirmLink == true) {
         ?>
             <div class="container">

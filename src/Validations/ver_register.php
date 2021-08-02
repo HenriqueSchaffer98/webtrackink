@@ -1,15 +1,14 @@
 <?php
+// -- Realiza importações -- //
 include('../Config/database.php');
 
-
+// -- Busca informações do POST -- //
 $name = mysqli_real_escape_string($connection, $_POST['name']);
 $usr = mysqli_real_escape_string($connection, $_POST['username']);
 $passwd = mysqli_real_escape_string($connection, md5($_POST['password']));
-
+// -- Cria query -- //
 $sql = "insert into usuarios (nome, username, password) values ('$name', '$usr', '$passwd')";
 $result = mysqli_query($connection, $sql);
-
-//mysqli_close($connection);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -33,7 +32,7 @@ $result = mysqli_query($connection, $sql);
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header bg-success text-white">
-                    <h5 class="modal-title" id="staticBackdropLabel">Excluir Registro</h5>
+                    <h5 class="modal-title" id="staticBackdropLabel">Message</h5>
                     <a href="../Pages/home.php"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></a>
                 </div>
                 <div class="modal-body">

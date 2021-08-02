@@ -1,22 +1,31 @@
 <?php
+// -- Realiza importações -- //
 require_once('./session.php');
 require_once('../Config/database.php');
-
+// -- Pega info passadas pela URL -- //
 $id_link = mysqli_real_escape_string($connection, $_GET['id']);
 
+// -- Valida informações -- //
 if (isset($_GET['del'])) {
+    // -- Verifica info passado pelo metodo GET -- //
     if ($_GET['del'] == "true") {
         $id_link = mysqli_real_escape_string($connection, $_GET['id']);
+        // -- Monta Query para deletar histórico -- //
         $query = "delete from hist_link where link_id={$id_link}";
         $result = mysqli_query($connection, $query);
+        // -- Verifica retorno da requisição -- /
         if ($result == 1) {
+            // -- Monta Query para deletar link -- //
             $sql = "delete from link where id={$id_link}";
             $consult = mysqli_query($connection, $sql);
+            // -- Verifica retorno da segunda requisição -- //
             if($consult == 1){
+                // -- Redireciona para Home -- //
                 header('Location: ../Pages/home.php');
             }
             
         } else {
+            // -- Retorna erro -- //
             die('Erro ao apagar registro: ');
         }
     }
