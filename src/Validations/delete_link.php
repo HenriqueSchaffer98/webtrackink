@@ -7,10 +7,15 @@ $id_link = mysqli_real_escape_string($connection, $_GET['id']);
 if (isset($_GET['del'])) {
     if ($_GET['del'] == "true") {
         $id_link = mysqli_real_escape_string($connection, $_GET['id']);
-        $query = "delete from link where id={$id_link}";
+        $query = "delete from hist_link where link_id={$id_link}";
         $result = mysqli_query($connection, $query);
         if ($result == 1) {
-            header('Location: ../Pages/home.php');
+            $sql = "delete from link where id={$id_link}";
+            $consult = mysqli_query($connection, $sql);
+            if($consult == 1){
+                header('Location: ../Pages/home.php');
+            }
+            
         } else {
             die('Erro ao apagar registro: ');
         }

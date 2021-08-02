@@ -1,8 +1,15 @@
 import Sequelize from 'sequelize';
+import Connection from '../Config/db';
+import Usuarios from './Usuarios';
+import Link from './link';
 
-const hist_link = Sequelize.define('hist_link', {
+const Hist_link = Connection.define('hist_link', {
+
     id: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        autoIncrement: true,
+        allowNull: false,
+        primaryKey:true
     },
     cod_http: {
         type: Sequelize.STRING
@@ -11,12 +18,24 @@ const hist_link = Sequelize.define('hist_link', {
         type: Sequelize.TEXT
     },
     user_id: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+            model: Usuarios,
+            key: 'id'
+        }
     },
     link_id: {
-        type: Sequelize.INTEGER
-    }
+        type: Sequelize.INTEGER,
+        references: {
+            model: Link,
+            key: 'id'
+        }
+    }, 
 
+}, {
+    freezeTableName: true,
+    createdAt: false,
+    updatedAt: false
 });
 
-export default hist_link;
+export default Hist_link;
