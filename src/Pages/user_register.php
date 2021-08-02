@@ -1,3 +1,4 @@
+<!-- Criação do formulário de cadastro -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,20 +18,20 @@
                 <div class="mb-3">
                     <img src="../assets/img/webtrackink.png" class="rounded mx-auto d-block" alt="logo" width="200px" height="200px" />
                 </div>
-                <form action="" method="POST">
+                <form action="../Validations/ver_register.php" method="POST">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Nome</label>
-                        <input class="form-control" type="text" placeholder="Nome" id="iptUser" name="name" aria-label="default input example" />
+                        <input class="form-control" type="text" placeholder="Nome" id="iptUser" name="name" aria-label="default input example" required/>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Username</label>
-                        <input class="form-control" type="text" placeholder="Username" id="iptUsername" name="username" aria-label="default input example" />
+                        <input class="form-control" type="text" placeholder="Username" id="iptUsername" name="username" aria-label="default input example" required/>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" name="password" id="iptPassword" />
+                        <input type="password" class="form-control" name="password" id="iptPassword"  required/>
                     </div>
-                    <button type="" onclick="validaCadastro()" class="btn btn-primary">Cadastrar</button>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
                 </form>
             </div>
         </div>

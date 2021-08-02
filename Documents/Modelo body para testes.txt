@@ -1,0 +1,719 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="shortcut icon" href="https://odownloader.com/assets/images/favicon.jpg"/>
+    <title>Baixar video do Youtube - Conversor do Youtube para MP4 | oDownloader</title>
+    <meta content="Transfere vídeos do YouTube gratuitamente com o oDownloader. Converte online vídeos do YouTube para MP4 em 4K, 1080p e 720p."
+          name="description">
+        <meta name="robots" content="index, follow">
+        <meta content="Transfere vídeos do YouTube gratuitamente com o oDownloader. Converte online vídeos do YouTube para MP4 em 4K, 1080p e 720p." property="og:description">
+    <meta content="pt" property="og:locale">
+        <link rel="alternate" hreflang="en-us" href="https://odownloader.com/en2/"/>
+        <link rel="alternate" hreflang="x-default" href="https://odownloader.com/en2/"/>
+        <link rel="alternate" hreflang="de-de" href="https://odownloader.com/de1/"/>
+        <link rel="alternate" hreflang="pt" href="https://odownloader.com/pt/"/>
+        <link rel="alternate" hreflang="es" href="https://odownloader.com/es/"/>
+        <link rel="alternate" hreflang="fr-tf" href="https://odownloader.com/fr1/"/>
+        <link rel="alternate" hreflang="nl" href="https://odownloader.com/nl/"/>
+        <link rel="alternate" hreflang="zh" href="https://odownloader.com/zh/"/>
+        <link rel="alternate" hreflang="he" href="https://odownloader.com/he/"/>
+        <link rel="alternate" hreflang="hu" href="https://odownloader.com/hu/"/>
+        <link rel="alternate" hreflang="ja" href="https://odownloader.com/ja/"/>
+        <link rel="alternate" hreflang="it-it" href="https://odownloader.com/it1/"/>
+        <link rel="alternate" hreflang="ig" href="https://odownloader.com/ig/"/>
+        <link rel="alternate" hreflang="tl-ph" href="https://odownloader.com/fil/"/>
+        <link rel="alternate" hreflang="hi" href="https://odownloader.com/hi/"/>
+        <link rel="alternate" hreflang="ko" href="https://odownloader.com/ko/"/>
+        <link rel="alternate" hreflang="no" href="https://odownloader.com/no/"/>
+        <link rel="alternate" hreflang="pl" href="https://odownloader.com/pl/"/>
+        <link rel="alternate" hreflang="ro" href="https://odownloader.com/ro/"/>
+        <link rel="alternate" hreflang="tr" href="https://odownloader.com/tr/"/>
+        <link rel="alternate" hreflang="th" href="https://odownloader.com/th/"/>
+        <link rel="alternate" hreflang="ar" href="https://odownloader.com/ar/"/>
+        <link rel="alternate" hreflang="ur" href="https://odownloader.com/ur/"/>
+        <link rel="alternate" hreflang="ru" href="https://odownloader.com/ru/"/>
+        <link rel="alternate" hreflang="sv" href="https://odownloader.com/sv/"/>
+        <link rel="alternate" hreflang="vi" href="https://odownloader.com/vi/"/>
+        <link rel="alternate" hreflang="cs" href="https://odownloader.com/cs/"/>
+        <link rel="alternate" hreflang="ms" href="https://odownloader.com/ms/"/>
+        <link rel="alternate" hreflang="id" href="https://odownloader.com/id/"/>
+        <meta content="website" property="og:type">
+    <meta content="Baixar video do Youtube - Conversor do Youtube para MP4 | oDownloader" property="og:title">
+    <meta property="og:url" content="https://odownloader.com/pt/"/>
+    <base href="https://odownloader.com/en2/">
+    <meta property="og:image" content="https://odownloader.com/assets/images/og-s.jpg"/>
+    <meta name="google-site-verification" content="OR4av8k_vaOutnBbCpVMJ0LKPyZftd7FJEr-tpyyohI"/>
+    <link rel="canonical" href="https://odownloader.com/pt/" />
+
+
+    <link rel="manifest" href="/manifest.json">
+
+        <!-- Add metriks -->
+        <script type="390567a531694ea7f6e25b67-text/javascript">
+                var $curUrl = 'https://odownloader.com/pt/';
+                if($curUrl.indexOf('install') > 1){
+                        var link1 = document.createElement('link');
+                        link1.rel = 'stylesheet';
+                        link1.type = 'text/css';
+                        link1.href = '/assets/css/main-style.min.css?v=1.1';
+                        link1.media = 'all';
+                        document.head.appendChild(link1);
+                }
+                window.addEventListener("mousemove", AddAssets, false);
+                window.addEventListener("scroll", AddAssets, false);
+                window.addEventListener("click", AddAssets, false);
+                window.addEventListener("touchstart", AddAssets, false);
+                var AddAssetsTimer = setTimeout(AddAssets, 5000);
+
+                function sleep(ms) {
+                  return new Promise(resolve => setTimeout(resolve, ms));
+                }
+
+                async function AddAssets() {
+
+                        window.removeEventListener("mousemove", AddAssets);
+                        window.removeEventListener("scroll", AddAssets);
+                        window.removeEventListener("click", AddAssets);
+                        window.removeEventListener("touchstart", AddAssets);
+                        clearTimeout(AddAssetsTimer);
+
+                        var script1 = document.createElement('script');
+                        script1.src = "https://www.googletagmanager.com/gtag/js?id=UA-136602541-1";
+
+                        var script2 = document.createElement('script');
+                        script2.text = "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-136602541-1');"
+
+                        var script3 = document.createElement('script');
+                        script3.src = "/assets/js/jquery-3.4.1.min.js";
+
+                        var script4 = document.createElement('script');
+                        script4.src = "/assets/js/Ffmpeg.js";
+
+                        var script5 = document.createElement('script');
+                        script5.src = "https://yastatic.net/share2/share.js";
+
+                        var script6 = document.createElement('script');
+                        script6.src = "/assets/js/jquery_coo.js?v=1.1";
+
+                        var script7 = document.createElement('script');
+                        script7.src = "/assets/js/popper.min.js";
+
+                        var script8 = document.createElement('script');
+                        script8.src = "/assets/js/bootstrap.min.js";
+
+                        var script9 = document.createElement('script');
+                        script9.src = "/assets/js/main.js?v=1.5.2";
+
+                        var script10 = document.createElement('script');
+                        script10.src = "/assets/js/stream-saver.js";
+
+                        var script11 = document.createElement('script');
+                        script11.src = "/assets/js/app.js?v3_39";
+
+                        var script12 = document.createElement('script');
+                        script12.src = "/assets/js/scripts.js?v=1.2";
+
+                        var script13 = document.createElement('script');
+                        script13.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+                        script13.setAttribute('data-ad-client', 'ca-pub-1079663840525548');
+
+                        var script14 = document.createElement('script');
+                        script14.src = "https://yastatic.net/share2/share.js";
+
+                        var link = document.createElement('link');
+                        link.rel = 'stylesheet';
+                        link.type = 'text/css';
+                        link.href = '/assets/css/main-style.min.css?v=1.1';
+                        link.media = 'all';
+
+                        document.head.appendChild(link);
+                        document.body.appendChild(script3);
+                        await sleep(500);
+                        document.body.appendChild(script9);
+                        await sleep(50);
+                        document.body.appendChild(script7);
+                        await sleep(50);
+                        document.body.appendChild(script8);
+                        await sleep(50);
+                        document.body.appendChild(script4);
+                        await sleep(50);
+                        document.body.appendChild(script6);
+                        await sleep(50);
+                        document.body.appendChild(script10);
+                        await sleep(50);
+                        document.body.appendChild(script11);
+                        await sleep(50);
+                        document.body.appendChild(script12);
+                        await sleep(50);
+                        document.body.appendChild(script5);
+                        await sleep(50);
+                        document.body.appendChild(script1);
+                        await sleep(50);
+                        document.body.appendChild(script2);
+                        await sleep(50);
+                        document.body.appendChild(script13);
+                        await sleep(50);
+                        document.body.appendChild(script14);
+                }
+        </script>
+    </head>
+<body >
+<header class="header">
+    <div class="header__content">
+        <a class="header__logo img-fluid" href="/pt/"><img width="176" height="28" src="/assets/img/header-logo.svg" alt=""></a>
+        <ul class="nav header__nav">
+            <li>
+                <div class="dropdown show header__dropdown">
+                    <a href="#">
+                        YouTube Downloader
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <div class="dropdown-menu-overflow">
+                            <a class="dropdown-item" href="/pt/">
+                                <svg class="dropdown-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.3639 5.63604C21.8787 9.15076 21.8787 14.8492 18.3639 18.3639C14.8492 21.8787 9.15074 21.8787 5.63604 18.3639C2.12132 14.8492 2.12132 9.15074 5.63604 5.63604C9.15076 2.12132 14.8492 2.12132 18.3639 5.63604"
+                                          stroke="#202020" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.625 15.125H8.25C7.56 15.125 7 14.565 7 13.875V10.125C7 9.435 7.56 8.875 8.25 8.875H12.625C13.315 8.875 13.875 9.435 13.875 10.125V13.875C13.875 14.565 13.315 15.125 12.625 15.125Z"
+                                          stroke="#202020" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.875 12.61L15.983 14.307C16.392 14.636 17 14.345 17 13.82V10.18C17 9.655 16.392 9.364 15.983 9.693L13.875 11.39"
+                                          stroke="#202020" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                YouTube to MP4
+                            </a>
+                            <a class="dropdown-item"
+                               href="/pt/yt-to-mp3-converter-online-320kbps-2">
+                                <svg class="dropdown-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 12C21 16.971 16.971 21 12 21C7.029 21 3 16.971 3 12C3 7.029 7.029 3 12 3C16.971 3 21 7.029 21 12Z"
+                                          stroke="#202020" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.9239 12.965C12.6179 13.659 12.6179 14.785 11.9239 15.479C11.2299 16.173 10.1039 16.173 9.4099 15.479C8.7159 14.785 8.7159 13.659 9.4099 12.965C10.1039 12.271 11.2289 12.271 11.9239 12.965Z"
+                                          stroke="#202020" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.1111 8.889L12.4441 8V14.222" stroke="#202020" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                                YouTube para mp3
+
+                            </a>
+                            <a class="dropdown-item"
+                               href="/pt/yt-videos-cutter-online">
+                                <svg class="dropdown-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                        <path d="M18.3639 5.65005C21.8787 9.16477 21.8787 14.8632 18.3639 18.3779C14.8492 21.8927 9.15074 21.8927 5.63604 18.3779C2.12132 14.8632 2.12132 9.16475 5.63604 5.65005C9.15076 2.13533 14.8492 2.13533 18.3639 5.65005"
+                                              stroke="#202020" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.96809 10.192C8.28209 9.79601 8.04709 8.91801 8.44309 8.23201C8.83909 7.54601 9.71709 7.31101 10.4031 7.70701C11.0891 8.10301 11.3241 8.98101 10.9281 9.66701C10.5321 10.353 9.65409 10.588 8.96809 10.192"
+                                              stroke="#202020" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M10.9281 14.361C10.5321 13.675 9.65409 13.44 8.96809 13.836C8.28209 14.232 8.04709 15.11 8.44309 15.796C8.83909 16.482 9.71709 16.717 10.4031 16.321C11.0891 15.925 11.3241 15.048 10.9281 14.361"
+                                              stroke="#202020" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16.25 9.63L8.96997 13.84" stroke="#202020" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                        <path d="M16.25 14.4L8.96997 10.19" stroke="#202020" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0">
+                                            <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                Cortador do YouTube
+                            </a>
+                                                                                </div>
+                    </div>
+                </div>
+            </li>
+            <li class="not-dropdown">
+                <div class="dropdown show header__dropdown">
+                    <a href="/pt/fb-videos-downloader-online-1080p">
+                        Facebook Downloader
+                    </a>
+                                                                        </div>
+            </li>
+            <li class="not-dropdown">
+                <div class="dropdown show header__dropdown">
+                    <a href="/pt/ig-videos-downloader-online-hd-1080p">
+                        Instagram Downloader
+                    </a>
+                                                        </div>
+            </li>
+                                                <li class="header__btn-wrap">
+                <div class="dropdown show header__dropdown fill-path">
+                    <a class="select-language triangle-after" href="javascript:void(0);">
+                        <img class="img-fluid country-logo lazyload" data-src="/assets/img/flags/pt.png?v=2" width="20px" height="20px" alt="">Português</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <div class="dropdown-menu-overflow">
+                                                        <a class="dropdown-item" href="/en2/">
+                                                                                        <img class="img-fluid country-logo lazyload"
+                                     data-src="/assets/img/flags/en.png?v=2" alt="" width="20px" height="20px">
+                                                                                        English
+                            </a>
+                                                        <a class="dropdown-item" href="/de1/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/de.png?v=2" alt="" width="20px" height="20px">
+                                                                                        Deutsch
+                            </a>
+                                                        <a class="dropdown-item" href="/pt/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/pt.png?v=2" alt="" width="20px" height="20px">
+                                                                                        Português
+                            </a>
+                                                        <a class="dropdown-item" href="/es/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/es.png?v=2" alt="" width="20px" height="20px">
+                                                                                        Español
+                            </a>
+                                                        <a class="dropdown-item" href="/fr1/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/fr.png?v=2" alt="" width="20px" height="20px">
+                                                                                        Français
+                            </a>
+                                                        <a class="dropdown-item" href="/nl/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/nl.png?v=2" alt="" width="20px" height="20px">
+                                                                                        Nederlandse
+                            </a>
+                                                        <a class="dropdown-item" href="/zh/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/zh.png?v=2" alt="" width="20px" height="20px">
+                                                                                        繁體中文
+                            </a>
+                                                        <a class="dropdown-item" href="/he/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/he.png?v=2" alt="" width="20px" height="20px">
+                                                                                        עברית
+                            </a>
+                                                        <a class="dropdown-item" href="/hu/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/hu.png?v=2" alt="" width="20px" height="20px">
+                                                                                        Magyar
+                            </a>
+                                                        <a class="dropdown-item" href="/ja/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/ja.png?v=2" alt="" width="20px" height="20px">
+                                                                                        日本語
+                            </a>
+                                                        <a class="dropdown-item" href="/it1/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/it.png?v=2" alt="" width="20px" height="20px">
+                                                                                        Italiano
+                            </a>
+                                                        <a class="dropdown-item" href="/ig/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/ig.png?v=2" alt="" width="20px" height="20px">
+                                                                                        Igbo
+                            </a>
+                                                        <a class="dropdown-item" href="/fil/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/fi.png?v=2" alt="" width="20px" height="20px">
+                                                                                        Filipino
+                            </a>
+                                                        <a class="dropdown-item" href="/hi/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/hi.png?v=2" alt="" width="20px" height="20px">
+                                                                                        हिन्दी
+                            </a>
+                                                        <a class="dropdown-item" href="/ko/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/ko.png?v=2" alt="" width="20px" height="20px">
+                                                                                        한국어
+                            </a>
+                                                        <a class="dropdown-item" href="/no/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/no.png?v=2" alt="" width="20px" height="20px">
+                                                                                        Norsk
+                            </a>
+                                                        <a class="dropdown-item" href="/pl/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/pl.png?v=2" alt="" width="20px" height="20px">
+                                                                                        Polski
+                            </a>
+                                                        <a class="dropdown-item" href="/ro/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/ro.png?v=2" alt="" width="20px" height="20px">
+                                                                                        Română
+                            </a>
+                                                        <a class="dropdown-item" href="/tr/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/tr.png?v=2" alt="" width="20px" height="20px">
+                                                                                        Türk
+                            </a>
+                                                        <a class="dropdown-item" href="/th/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/th.png?v=2" alt="" width="20px" height="20px">
+                                                                                        ไทย
+                            </a>
+                                                        <a class="dropdown-item" href="/ar/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/ar.png?v=2" alt="" width="20px" height="20px">
+                                                                                        العَرَبِيَّة
+                            </a>
+                                                        <a class="dropdown-item" href="/ur/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/ur.png?v=2" alt="" width="20px" height="20px">
+                                                                                        اُردُو
+                            </a>
+                                                        <a class="dropdown-item" href="/ru/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/ru.png?v=2" alt="" width="20px" height="20px">
+                                                                                        Русский
+                            </a>
+                                                        <a class="dropdown-item" href="/sv/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/sv.png?v=2" alt="" width="20px" height="20px">
+                                                                                        Svenska
+                            </a>
+                                                        <a class="dropdown-item" href="/vi/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/vi.png?v=2" alt="" width="20px" height="20px">
+                                                                                        Tiếng Việt
+                            </a>
+                                                        <a class="dropdown-item" href="/cs/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/cs.png?v=2" alt="" width="20px" height="20px">
+                                                                                        Češka
+                            </a>
+                                                        <a class="dropdown-item" href="/ms/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/ms.png?v=2" alt="" width="20px" height="20px">
+                                                                                        Orang Malaysia
+                            </a>
+                                                        <a class="dropdown-item" href="/id/">
+                                                                                                                       <img class="img-fluid country-logo lazyload"
+                                                                                data-src="/assets/img/flags/id.png?v=2" alt="" width="20px" height="20px">
+                                                                                        Bahasa Indonesia
+                            </a>
+                                                    </div>
+                    </div>
+                </div>
+
+                <a class="main-btn" href="/pt/install">
+                                                            Download now</a>
+            </li>
+        </ul>
+        <div class="hamburger hamburger--squeeze header__menu-btn" id="menu-btn">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+
+
+<section class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-xl-10 mx-auto text-center">
+                <div class="hero__title-wrap">
+                    <h1 class="h1">YouTube para MP4</h1>
+                                        <div class="hero__subtitle">Converter vídeos do YouTube para MP4</div>
+                                    </div>
+                <div class="hero__progress-bar">
+                    <div class="h2">Please wait a few seconds...</div>
+                    <div class="hero__progress-percentage">
+                            <span class="progress-text">
+                                0%
+                            </span>
+                        completed
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0"
+                             aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="hero__content-wrap">
+                    <div class="hero__form">
+                        <div class="form-group position-relative">
+                            <input type="text" id="videoUrl" class="form-control hero__form-input" name="videoUrl"
+                                   placeholder="O que queres transferir?">
+                            <a id="videoDetailButton" class="main-btn" href="javascript:void(0)">Start</a>
+                        </div>
+                    </div>
+                                        <div id="invalidVideoAlertBox" class="alert alert-danger" role="alert" style="display:none;">
+                                                <b>Youtube video address is invalid!</b>
+                                        </div>
+                                        <div id="errorVideoAlertBox" class="alert alert-danger" role="alert" style="display:none;"></div>
+                    <div class="hero__video-wrap row mx-0  text-lg-left">
+                        <div class="col-lg-6 pr-0 pl-0 pr-lg-4">
+                                                        <img src="" alt="" class="hero__video-img" width="300">
+                        </div>
+                        <div class="col-lg-6 px-0 pl-lg-1 pr-lg-3 pt-3 hero__video-select-wrap">
+                            <h5 class="hero__video-small-title"></h5>
+                            <div class="hero__video-title"></div>
+
+                            <div class="dropdown show d-inline-flex">
+                                <a class="hero__select-dropdown" style="min-width:320px;border-right:1px solid #dfdfdf" href="#" role="button"
+                                   id="hero-select-title" data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">
+                                    Choose format
+                                </a>
+                                <a class="download_btn" href="javascript:void(0)" id="download" style="width:0;min-width:0;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="20" height="20" x="0" y="0" viewBox="0 0 515.556 515.556" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" d="m0 274.226 176.549 176.886 339.007-338.672-48.67-47.997-290.337 290-128.553-128.552z" fill="#ffffff" data-original="#000000" style="" class=""/></g></svg>
+
+                                </a>
+                                <svg
+                                       style="right:15px" class="angle-down-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.93522 0.518585L5.99997 4.45384L2.06472 0.518585L0.768555 1.81475L5.99997 7.04617L11.2314 1.81475L9.93522 0.518585Z" fill="#202020"/>
+                                </svg>
+
+                                <div class="dropdown-menu hero__select-options" aria-labelledby="dropdownMenuLink">
+                                    <div class="dropdown-menu-overflow" id="formats">
+
+                                    </div>
+                                </div>
+                            </div>
+                                                        <div style="text-align:center;width:340px;">
+                                                                <div class="large-size" style="display:none;font-size:14px;margin:15px auto;text-align:left;line-height:1.5;">Large files not supported in web version, please use our desktop application <a class="main-btn" style="border-radius:5px;margin-top:15px" href="/en2/install"><img style="width:19px;margin-right:15px;" src="/assets/img/windows1.svg" alt="" width="38px" height="38px">Download app</a></div>
+                                                                <a type="button" href="javascript:void();" class="main-btn" id="downloadButton" style="display:none;margin:15px auto">
+                                                                        <i class="fa fa-download" style="margin-right:10px;" aria-hidden="true"></i> Click to Download <i class="fa fa-download" style="margin-left:10px;" aria-hidden="true"></i>
+                                                                </a>
+                                                                <div class="progress" id="convertLoading" style="display:none;margin-top:15px;width:100%;">
+                                                                        <div id="dynamic" class="progress-bar bg-success progress-bar-striped  progress-bar-animated active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                                                                <span id="current-progress"></span>
+                                                                        </div>
+                                                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="ajax-upload-content"></div>
+
+                                                <div class="hero__banner-dw d-flex align-items-center flex-wrap justify-content-lg-start justify-content-center" style="margin-bottom:15px;">
+                            <div class="banner-dw__logo mr-lg-4 mr-0 mb-lg-0 mb-3 ">
+                                <img src="/assets/img/windows1.svg" alt="" width="38px" height="38px">
+                            </div>
+                            <div class="banner-dw__text text-lg-left text-center justify-content-lg-start justify-content-center mb-lg-0 mb-3">
+                                <span class="color-yellow fw-700 mb-1">Want to download faster?</span>
+                                <span class="color-white">Install oDownloader for Windows</span>
+                            </div>
+                            <div class="banner-dw__btn">
+                                <a href="/pt/install" class="btn main-btn">Download now</a>
+                            </div>
+                        </div>
+                                                                                        <div class="hero__card-wrap row mx-0 justify-content-center"><div class="col-12 col-sm-4 px-sm-1 mb-3 mb-sm-0"><div class="hero__card mx-auto"><h5>Rápido e fácil.</h5><span class="hero__card-description">Cola o link e obtém o vídeo</span></div></div><div class="col-12 col-sm-4 px-sm-1 mb-3 mb-sm-0"><div class="hero__card mx-auto"><h5>Qualquer resolução de vídeo.</h5><span class="hero__card-description">4K, 2K, 1080p, 720p e mais</span></div></div><div class="col-12 col-sm-4 px-sm-1"><div class="hero__card mx-auto"><h5>É gratuito!</h5><span class="hero__card-description">Transfere vídeos do YouTube gratuitamente</span></div></div></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero__bg-one"><!-- <img class="img-fluid" width="344" height="684" src="/assets/img/hero-bg-1.svg" alt=""> --></div>
+    <div class="hero__bg-two"><!-- <img class="img-fluid" width="303" height="347" src="/assets/img/hero-bg-2.svg" alt=""> --> </div>
+</section>
+
+<section class="card-sec">
+    <div class="container text-center">
+        <div class="row">
+            <h2 class="col-12 h2">Como transferir um vídeo do YouTube?</h2>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                <div class="card-sec__card-wrap">
+                    <div class="card-sec__card-icon text-center">
+                        <span class="s-marker">1</span>
+                    </div>
+                    <h5 class="card-sec__card-title">Copia o URL do vídeo no YouTube</h5>
+                    <div class="card-sec__card-description">Copia o link do vídeo para a barra de endereços do navegador ou clica com o botão direito do rato sobre o vídeo do YouTube, seleciona "copiar URL do vídeo" ou clica no botão"partilhar" no menu abaixo do vídeo</div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                <div class="card-sec__card-wrap">
+                    <div class="card-sec__card-icon text-center">
+                        <span class="s-marker">2</span>
+                    </div>
+                    <h5 class="card-sec__card-title">Cola o URL do vídeo do YouTube</h5>
+                    <div class="card-sec__card-description">Cola o link na barra de busca do oDownloader e espera uns segundos.</div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                <div class="card-sec__card-wrap">
+                    <div class="card-sec__card-icon text-center">
+                        <span class="s-marker">3</span>
+                    </div>
+                    <h5 class="card-sec__card-title">Seleciona a resolução</h5>
+                    <div class="card-sec__card-description">Seleciona o formato e resolução do vídeo/audio. Aguarda o final da conversão e transfere o ficheiro.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cta">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-12 col-xl-9 mx-auto">
+                <h2 class="h2">O melhor conversor de YouTube para MP4</h2>
+                <p class="cta__subtitle">Para transferir o vídeo do YouTube tens sempre de convertê-lo primeiro. O formato mais popular é o MP4. O oDownloader é um dos melhores conversores de YouTube para MP4.</p>
+                <!--start-->
+                <h2>Características:</h2>
+                <div class="row mb-lg-2 text-center">
+                    <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                        <div class="card-sec__card-wrap">
+                            <div class="card-sec__card-icon text-center">
+                                <i class="card-m-b fas fa-download"></i>
+                            </div>
+                            <div class="card-sec__card-description">Transfere vídeos do YouTube com elevada resolução - 4K Full HD, 2K, 1080p, 720p.</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                        <div class="card-sec__card-wrap">
+                            <div class="card-sec__card-icon text-center">
+                                <i class="card-m-b fab fa-windows"></i>
+                                <i class="card-m-b fab fa-apple"></i>
+                                <i class="card-m-b fab fa-android"></i>
+                            </div>
+                            <div class="card-sec__card-description">Funciona em qualquer plataforma - PC, Mac, iOS, Android.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-lg-2 text-center">
+                    <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                        <div class="card-sec__card-wrap">
+                            <div class="card-sec__card-icon text-center">
+                                <i class="card-m-b fas fa-file-video"></i>
+                            </div>
+                            <div class="card-sec__card-description">Converte vídeos de YouTube para MP4 muito rapidamente.</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                        <div class="card-sec__card-wrap">
+                            <div class="card-sec__card-icon text-center">
+                                <i class="card-m-b fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="card-sec__card-description">Disponível para todos, sem limitações ou publicidade.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4 text-center">
+                    <div class="col-12 mb-3 mb-lg-0">
+                        <div class="card-sec__card-wrap">
+                            <div class="card-sec__card-icon text-center">
+                                <i class="card-m-b fas fa-user-shield"></i>
+                            </div>
+                            <div class="card-sec__card-description">100% seguro.</div>
+                        </div>
+                    </div>
+                </div>
+                <!--end-->
+                <p class="cta__subtitle">Transferir videos do YouTube nunca foi tão fácil com o oDownloader. Atualizámos recentemente os nossos algoritmos, aperfeiçoámos o interface e acrescentámos novas funcionalidades.</p>
+
+                <div class="cta__subtitle-item">Outra ferramenta gratuita de transferência de YouTube do oDownloader:</div>
+                <div class="cta__btns-wrap">
+                    <a class="main-btn main-simple-btn" href="/pt/yt-to-mp3-converter-online-320kbps-2">Conversor de YouTube para MP3 & Descarregador de listas de reprodução</a>
+                </div>
+                <p class="text-center"><b>Fala aos teus amigos sobre o nosso conversor de YouTube para MP4!</b></p>
+                <div class="ya-share2" data-curtain data-size="l" data-shape="round" data-lang="en"
+                     data-color-scheme="whiteblack" data-services="facebook,telegram,twitter,tumblr,linkedin"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <div class="push"></div>
+</main>
+<footer class="footer">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="footer__copyright col-12 col-lg-4 order-last order-lg-0 text-center text-lg-left">
+                    Copyright © 2021 · All Rights Reserved.
+                </div>
+                <div class="col-12 col-lg mb-4 mb-lg-0">
+                    <ul class="nav footer__nav align-items-center flex-column flex-sm-row
+                     justify-content-center justify-content-lg-end">
+                        <li><a href="/pt/about-us">Sobre nós</a></li>
+                        <li><a href="/pt/privacy-policy">Política de Privacidade</a></li>
+                        <li><a href="/pt/dmca">Lei de Direitos Autorais do Milênio Digital</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script type="390567a531694ea7f6e25b67-text/javascript">
+        function ready(fn) {
+          if (document.readyState != 'loading'){
+                fn();
+          } else {
+                document.addEventListener('DOMContentLoaded', fn);
+          }
+        }
+
+        ready(() => {
+                document.querySelector('#menu-btn').addEventListener('click', event => {
+                        if(document.querySelector('#menu-btn').classList.contains('is-active')) {
+                                document.querySelector('#menu-btn').classList.remove('is-active');
+                                document.querySelector('.header__nav').classList.remove('opened');
+                        }else{
+                                document.querySelector('#menu-btn').classList.add('is-active');
+                                document.querySelector('.header__nav').classList.add('opened');
+                        }
+
+                });
+        });
+
+
+</script>
+<script type='application/ld+json'>
+    {
+        "@context": "http://schema.org/",
+        "@type": "SoftwareApplication",
+        "applicationCategory": "BrowserApplication",
+        "operatingSystem": [
+            "Windows",
+            "macOS",
+            "Android",
+            "iOS"
+        ],
+        "alternativeHeadline": "oDownloader YouTube Downloader",
+        "copyrightYear": "2021",
+        "headline": "oDownloader",
+        "keywords": "oDownloader, youtube downloader, video downloader, save online video, download video from youtube",
+        "offers": {
+            "@type": "Offer",
+            "price": "0.0",
+            "priceCurrency": "USD",
+            "alternateName": "oDownloader",
+            "description": "oDownloader Downloader",
+            "mainEntityOfPage": "https://odownloader.com/",
+            "name": "oDownloader"
+        },
+        "alternateName": "oDownloader",
+        "mainEntityOfPage": "https://odownloader.com/",
+        "name": "Baixar video do Youtube - Conversor do Youtube para MP4 | oDownloader"
+    }
+</script>
+<div class="modal fade" id="modal-instagram-install" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                        <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true"><img class="lazyload" data-src="/assets/img/modal-close.svg" alt=""></span>
+                                                </button>
+                                        </div>
+                                        <div class="modal-body">
+                                                <div class="modal-description">
+                                                        Do you want to download video from any websites <span>much faster</span> and <span>easier</span> than it’s ever been?
+
+                                                </div>
+                                                                                                <a href="https://odownloader.com/download/oDownloader.exe" class="btn btn-modal">
+                                                        <img data-src="/assets/img/btn-svg.svg" alt="" class="btn-modal__window lazyload">
+                                                        <span>Install Windows app</span>
+                                                        <img data-src="/assets/img/description-arrow.svg" alt="" class="description-arrow lazyload">
+                                                </a>
+                                                                                                <img data-src="/assets/img/modal-image.png" alt="" class="modal-image lazyload">
+                                                <img data-src="/assets/img/modal-bg1.svg" alt="" class="yellow-circle lazyload">
+                                                <img data-src="/assets/img/modal-bg2.svg" alt="" class="big-circle lazyload">
+                                                <img data-src="/assets/img/modal-bg3.svg" alt="" class="wavy-line lazyload">
+                                                <img data-src="/assets/img/modal-bg4.svg" alt="" class="small-circle lazyload">
+                                        </div>
+                                        <div class="modal-footer"></div>
+                                </div>
+                        </div>
+                </div>
+
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="390567a531694ea7f6e25b67-|49" defer=""></script></body>
+</html>
