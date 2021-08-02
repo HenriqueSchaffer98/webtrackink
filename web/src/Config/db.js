@@ -1,3 +1,4 @@
+// -- Configuração do acesso ao Banco -- // 
 import Sequelize from 'sequelize';
 
 const Connection = new Sequelize('webtrackink', 'root', '', {

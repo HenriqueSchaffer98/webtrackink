@@ -1,33 +1,39 @@
 (async () => {
+    // -- Import -- //
     import Sequelize from 'sequelize';
     import Connection from './Config/db';
     import Usuarios from './Model/Usuarios';
     import Link from './Model/link';
     import Hist_link from './Model/hist_link';
     import request from 'request';
-
+    // -- Function Acessa Links -- //
     async function accessLinks() {
         try {
+            // -- Busca informações -- //
             const links = await Link.findAll();
             const buscaHist = await Hist_link.findAll();
             const link_id = await buscaHist.map((hist) => {
                 return hist.link_id;
             });
+            // -- Mapeia as URLs -- //
             await links.map((item) => {
                 console.log("Mapeando links..." + item.id + ": " + item.url);
-
+                // -- Funtion Requisições -- //
                 async function verLinks() {
                     console.log("Fazendo Requisições...");
                     request(item.url, (error, request, body) => {
                         console.log("Verificando existencia de registro..." + item.id);
+                        // -- Busca Hist_link -- //
                         async function verHistLink() {
                             const buscaRegistro = await Hist_link.findOne({
                                 where: {
                                     link_id: item.id
                                 }
                             });
+                            // -- Compara registros -- //
                             if (!buscaRegistro) {
                                 console.log("Registro não encontrado! Criando estrutura...");
+                                // -- Cria estrutura -- //
                                 Hist_link.create({
                                     cod_http: request.statusCode,
                                     rest: body,
@@ -37,6 +43,7 @@
                                 console.log("Estrutura criada!");
                             } else {
                                 console.log("Registro encontrado! Atualizando informações..." + item.id + ": " + item.url);
+                                // -- Atualiza dados -- //
                                 Hist_link.update({
                                     cod_http: request.statusCode,
                                     rest: body
@@ -66,11 +73,12 @@
                             }
 
                         }
-
+                        // -- Chama function -- //
                         verHistLink();
 
                     });
                 }
+                // -- Chama Function -- //
                 verLinks();
 
             });
@@ -80,5 +88,6 @@
         }
 
     }
+    // -- Intervalo de execução -- //
     setInterval(accessLinks, 10000);
 })();

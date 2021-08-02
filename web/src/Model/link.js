@@ -1,7 +1,9 @@
+// -- Model link -- //
+// -- Import -- //
 import Connection from '../Config/db'
 import Sequelize from 'sequelize';
 import Usuarios from './Usuarios';
-
+// -- Cria estrutura da tabela link -- //
 const Link = Connection.define('link', {
 
     id: {

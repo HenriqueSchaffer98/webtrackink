@@ -1,7 +1,9 @@
+// -- Model usuarios -- //
+// -- Import -- //
 import Sequelize from 'sequelize';
 import Connection from '../Config/db';
 
-
+// -- Cria estrutura da tabela Usuarios -- //
 const Usuarios = Connection.define('Usuarios', {
     
 
